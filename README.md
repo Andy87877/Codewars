@@ -2,7 +2,7 @@
 
 <h1 align="center">https://www.codewars.com/dashboard</h1>
 
-<h1 align="center">往4kyu邁進!!!</h1>
+<h1 align="center">往3kyu邁進!!!</h1>
 
 </a>
 <p align="center">
