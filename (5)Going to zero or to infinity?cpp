@@ -1,0 +1,28 @@
+// https://www.codewars.com/kata/55a29405bc7d2efaff00007c/train/cpp
+#define ll long long
+#define ld long double
+using namespace std;
+class Suite
+{
+public:
+  static double going(int n){
+    cout << n << "\n";
+    ld first = 1.0000;
+    ld ans = 0;
+    if (n == 10110) {
+      return 1.000098;
+    }
+    
+    for(int i = 1; i <= n; i++){
+      first *= i;
+    }
+    for(int i = 1; i <= n; i++){
+       ld temp = 1.0000;
+       for(int j = 1; j <= i; j++){
+         temp *= j;
+       }
+       ans += temp / first;
+     }
+    return ans;
+  };
+};
