@@ -4,13 +4,8 @@ using namespace std;
 
 float find_uniq(const vector<float> &v){
   map<float, int> ma;
-  for (auto i: v) {
-    ma[i]++;
-    if (ma.size() == 2) {
-      if (ma[i] == 1) {
-        return i;
-      }
-    }
+  for (auto i: v) {ma[i]++;}
+  for (auto i: ma) {
+    if (i.second == 1) {return i.first;}
   }
-  return v[0];
 }
